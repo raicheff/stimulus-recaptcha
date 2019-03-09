@@ -13,12 +13,10 @@ export default class extends Controller {
 
   connect() {
 
-    const recaptcha = window.grecaptcha;
-
     // https://developers.google.com/recaptcha/docs/v3
 
-    recaptcha.ready(() => {
-      recaptcha.execute(this.data.get("site-key"), { action: this.data.get("action") }).then(token => {
+    grecaptcha.ready(() => {
+      grecaptcha.execute(this.data.get("site-key"), { action: this.data.get("action") }).then(token => {
         this.element.value = token;
       })
     })
