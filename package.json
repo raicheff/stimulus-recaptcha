@@ -1,0 +1,23 @@
+{
+  "name": "stimulus-recaptcha",
+  "version": "0.1.0",
+  "description": "Stimulus-reCAPTCHA",
+  "main": "stimulus-recaptcha.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raicheff/stimulus-recaptcha.git"
+  },
+  "keywords": [
+    "stimulus",
+    "recaptcha"
+  ],
+  "author": "Boris Raicheff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raicheff/stimulus-recaptcha/issues"
+  },
+  "homepage": "https://github.com/raicheff/stimulus-recaptcha#readme"
+}
