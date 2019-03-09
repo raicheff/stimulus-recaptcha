@@ -11,7 +11,9 @@ import { Controller } from "stimulus";
 
 export default class extends Controller {
 
-  static targets = ["token"];
+  static get targets() {
+    return ["token"]
+  }
 
   connect() {
 
@@ -21,9 +23,9 @@ export default class extends Controller {
 
     recaptcha.ready(() => {
       recaptcha.execute(this.data.get("site-key"), { action: this.data.get("action") }).then(token => {
-        this.tokenTarget.value = token;
-      });
-    });
+        this.tokenTarget.value = token
+      })
+    })
 
   }
 
